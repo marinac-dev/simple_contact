@@ -7,6 +7,7 @@ defmodule SimpleContact.Application do
 
   def start(_type, _args) do
     children = [
+      SimpleContact.Repo,
       # Start the Telemetry supervisor
       SimpleContactWeb.Telemetry,
       # Start the PubSub system

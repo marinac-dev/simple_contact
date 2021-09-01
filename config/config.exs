@@ -7,6 +7,8 @@
 # General application configuration
 use Mix.Config
 
+config :simple_contact, ecto_repos: [SimpleContact.Repo]
+
 # Configures the endpoint
 config :simple_contact, SimpleContactWeb.Endpoint,
   url: [host: "localhost"],

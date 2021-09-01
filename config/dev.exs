@@ -1,5 +1,14 @@
 use Mix.Config
 
+config :simple_contact, SimpleContact.Repo,
+  username: "test",
+  password: "vniYaaz3yiCs2eLqn6$SE4GPbZ4&ev9Q",
+  database: "epps",
+  hostname: "localhost",
+  show_sensitive_data_on_connection_error: true,
+  pool_size: 10,
+  adapter: Ecto.Adapters.MyXQL
+
 # For development, we disable any cache and enable
 # debugging and code reloading.
 #
