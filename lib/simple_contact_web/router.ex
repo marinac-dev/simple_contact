@@ -18,6 +18,13 @@ defmodule SimpleContactWeb.Router do
     pipe_through :browser
 
     live "/", PageLive, :index
+
+    live "/contacts", ContactLive.Index, :index
+    live "/contacts/new", ContactLive.Index, :new
+    live "/contacts/:id/edit", ContactLive.Index, :edit
+
+    live "/contacts/:id", ContactLive.Show, :show
+    live "/contacts/:id/show/edit", ContactLive.Show, :edit
   end
 
   # Other scopes may use custom stacks.
