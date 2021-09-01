@@ -45,7 +45,8 @@ defmodule SimpleContact.MixProject do
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
       {:ecto_sql, "~> 3.0"},
-      {:myxql, "~> 0.5.0"}
+      {:myxql, "~> 0.5.0"},
+      {:phoenix_ecto, "~> 4.4"}
     ]
   end
 
